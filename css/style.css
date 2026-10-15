@@ -220,6 +220,22 @@ input[type="text"] {
     background-repeat: no-repeat;
 }
 
+.bonzi_sprite {
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.bonzi_sprite.rainbow {
+    animation: bonzi-rainbow-hue 4s linear infinite;
+}
+
+@keyframes bonzi-rainbow-hue {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+}
+
 .bubble {
     font-size: 14px;
     width: 197px;
